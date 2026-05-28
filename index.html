@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saniya 🎉 Birthday Surprise</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<audio id="bgMusic" src="music.mp3" loop></audio>
+
+<!-- Step 1 -->
+<div id="s1" class="screen theme1 active">
+  <h1>Hey Saniya 💖</h1>
+  <p>I made something for you…</p>
+  <button onclick="nextStep(1)">Tap ✨</button>
+</div>
+
+<!-- Step 2 -->
+<div id="s2" class="screen theme2">
+  <h1>Please wait 🌸</h1>
+  <p>Good things deserve a moment</p>
+  <button onclick="nextStep(2)">Next 💫</button>
+</div>
+
+<!-- Step 3 -->
+<div id="s3" class="screen theme3">
+  <h1>You should know 😊</h1>
+  <p>You always cheer me up when I feel low</p>
+  <button onclick="nextStep(3)">Next 💖</button>
+</div>
+
+<!-- Step 4 -->
+<div id="s4" class="screen theme4">
+  <h1>Almost there 🎈</h1>
+  <p>This is just for you</p>
+  <button onclick="nextStep(4)">One more ✨</button>
+</div>
+
+<!-- Step 5 -->
+<div id="s5" class="screen theme5">
+  <h1>Ready? 🎂</h1>
+  <p>Your surprise awaits</p>
+  <button onclick="showFinal()">Open 💝</button>
+</div>
+
+<!-- Final -->
+<div id="final" class="screen final themeFinal">
+  <canvas id="confetti"></canvas>
+
+  <div class="card">
+    <img src="saniya.png" class="photo">
+    <h2>Happy 25th Birthday Saniya 🎉</h2>
+    <h3>To the one who cheers me up ✨</h3>
+    <p id="typing"></p>
+    <button onclick="playMusic()">🔊 Play Music</button>
+  </div>
+
+  <div id="reasonsBox">
+    <h2>25 Reasons Today Is Special ✨</h2>
+    <p id="reasonText">Click to reveal...</p>
+    <button onclick="nextReason()">Reveal 💫</button>
+  </div>
+</div>
+
+<div id="floating"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
